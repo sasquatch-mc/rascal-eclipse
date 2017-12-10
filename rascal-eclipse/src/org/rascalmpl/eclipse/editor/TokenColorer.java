@@ -44,18 +44,18 @@ public class TokenColorer implements ITokenColorer {
 		
 		map.put(TreeAdapter.NORMAL, new TextAttribute(null, null, SWT.NONE));
 		
-		map.put(TreeAdapter.NONTERMINAL_LABEL, new TextAttribute(new Color(Display.getDefault(), 0x80, 0x80, 0x80), null, SWT.ITALIC));
-		map.put(TreeAdapter.META_KEYWORD, new TextAttribute(new Color(Display.getDefault(), 123, 0, 82), null, SWT.BOLD));
-		map.put(TreeAdapter.META_VARIABLE, new TextAttribute(new Color(Display.getDefault(), 0x29,0x5F,0x94), null, SWT.ITALIC));
+		map.put(TreeAdapter.NONTERMINAL_LABEL, new TextAttribute(new Color(Display.getDefault(), 187, 181, 41), null, SWT.ITALIC));
+		map.put(TreeAdapter.META_KEYWORD, new TextAttribute(new Color(Display.getDefault(), 204, 120, 50), null, SWT.BOLD));
+		map.put(TreeAdapter.META_VARIABLE, new TextAttribute(new Color(Display.getDefault(), 152,118,170), null, SWT.ITALIC));
 		map.put(TreeAdapter.META_AMBIGUITY,  new TextAttribute(new Color(Display.getDefault(), 186, 29, 29), null, SWT.BOLD));
-		map.put(TreeAdapter.META_SKIPPED,  new TextAttribute(null, new Color(Display.getDefault(), 255, 255, 255), SWT.ITALIC)); //82, 141, 115
-		map.put(TreeAdapter.TODO,new TextAttribute(new Color(Display.getDefault(), 123, 157, 198), null, SWT.BOLD));
-		map.put(TreeAdapter.COMMENT,new TextAttribute(new Color(Display.getDefault(), 82, 141, 115), null, SWT.ITALIC));
-		map.put(TreeAdapter.CONSTANT,new TextAttribute(new Color(Display.getDefault(), 139, 0, 139), null, SWT.NONE));
-		map.put(TreeAdapter.VARIABLE,new TextAttribute(new Color(Display.getDefault(), 0x55,0xaa,0x55), null, SWT.NONE));
-		map.put(TreeAdapter.IDENTIFIER,new TextAttribute(new Color(Display.getDefault(), 0x2C,0x57,0x7C), null, SWT.NONE));
+		map.put(TreeAdapter.META_SKIPPED,  new TextAttribute(new Color(Display.getDefault(), 172, 172, 172), new Color(Display.getDefault(), 104, 58, 74), SWT.ITALIC)); //82, 141, 115
+		map.put(TreeAdapter.TODO,new TextAttribute(new Color(Display.getDefault(), 98, 151, 85), null, SWT.BOLD));
+		map.put(TreeAdapter.COMMENT,new TextAttribute(new Color(Display.getDefault(), 255, 198, 109), null, SWT.ITALIC));
+		map.put(TreeAdapter.CONSTANT,new TextAttribute(new Color(Display.getDefault(), 98, 151, 85), null, SWT.NONE));
+		map.put(TreeAdapter.VARIABLE,new TextAttribute(new Color(Display.getDefault(), 152,118,170), null, SWT.NONE));
+		map.put(TreeAdapter.IDENTIFIER,new TextAttribute(new Color(Display.getDefault(), 187,202,219), null, SWT.NONE));
 		map.put(TreeAdapter.QUOTE,new TextAttribute(new Color(Display.getDefault(), 255, 69, 0), new Color(Display.getDefault(), 32,178,170), SWT.NONE));
-		map.put(TreeAdapter.TYPE,new TextAttribute(new Color(Display.getDefault(), 0xAB,0x25,0x25), null, SWT.NONE));
+		map.put(TreeAdapter.TYPE,new TextAttribute(new Color(Display.getDefault(), 187,202,219), null, SWT.NONE));
 		map.put(TreeAdapter.RESULT, new TextAttribute(new Color(Display.getDefault(), 0x74,0x8B,0x00), new Color(Display.getDefault(), 0xEC, 0xEC, 0xEC), SWT.ITALIC));
 		map.put(TreeAdapter.STDOUT, new TextAttribute(new Color(Display.getDefault(), 0xB3,0xB3,0xB3), null, SWT.ITALIC));
 		map.put(TreeAdapter.STDERR, new TextAttribute(new Color(Display.getDefault(), 0xAF,0x00,0x00), null, SWT.NONE));
